@@ -49,7 +49,7 @@ For local defaults, copy `config.example.sh` to `config.sh` and edit its setting
 
 ## Pull Shark and achievements
 
-Pull Shark is a GitHub achievement associated with getting pull requests merged. GitHub determines achievement eligibility and may apply requirements or limits that change over time. Running this script does **not** guarantee that you will receive Pull Shark or any other achievement. See [GitHub's achievements documentation](https://docs.github.com/account-and-profile/reference/profile-achievements) for current information.
+Pull Shark is a GitHub achievement associated with getting pull requests merged. GitHub determines achievement eligibility and may apply requirements or limits that change over time. Running this script does **not** guarantee that you will receive Pull Shark or any other achievement. See [GitHub's profile reference](https://docs.github.com/en/account-and-profile/reference/profile-reference) for current information.
 
 ## Learning materials
 
