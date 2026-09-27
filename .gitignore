@@ -1,0 +1,2 @@
+# Local-only automation settings; never commit credentials or personal config.
+/config.sh
