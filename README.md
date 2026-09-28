@@ -56,6 +56,7 @@ Pull Shark is a GitHub achievement associated with getting pull requests merged.
 - [How the automation works](docs/how-it-works.md)
 - [GitHub CLI basics](docs/github-cli.md)
 - [Pull request workflow](docs/pull-request-workflow.md)
+- [Co-authored commits](docs/co-authored-commits.md)
 - [Achievements and Pull Shark](docs/achievements.md)
 - [One-PR demo](examples/small-demo.md)
 
