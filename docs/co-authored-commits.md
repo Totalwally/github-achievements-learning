@@ -31,4 +31,6 @@ Inspect the commit message before pushing:
 git show -s --format=full HEAD
 ```
 
-After the commit is pushed, GitHub can display the listed co-author on the commit page when the trailer is correctly formatted and the email maps to their account. A correctly written trailer alone does not guarantee profile contributions or any GitHub achievement; GitHub controls attribution and eligibility.
+After the commit is pushed, inspect the pull request's **Commits** list or the commit page. GitHub should associate the co-author with their account when the trailer is correctly formatted and the email maps to their account. If GitHub shows only the primary author, verify the spelling, blank line, trailer syntax, and email association before merging.
+
+A correctly written trailer alone does not guarantee profile contributions or any GitHub achievement; GitHub controls attribution and eligibility.
