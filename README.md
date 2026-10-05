@@ -1,10 +1,6 @@
-<p align="center">
-  <img src="assets/readme-banner.svg" alt="GitHub Pull Request Automation Learning Lab banner" width="1400" />
-</p>
+# GitHub Pull Request Automation Learning Lab
 
-**I'm Wally**
-
-This repository is an educational Bash lab for learning how Git, GitHub CLI, branches, and pull requests fit together. The script makes a small, timestamped change, publishes a branch, opens a pull request, and merges it while you learn how the GitHub workflow works.
+This repository is an educational Bash lab for learning how Git, GitHub CLI, branches, and pull requests fit together. The script makes a small, timestamped change, publishes a branch, opens a pull request, and merges it. The repo is designed to teach how the automation works end-to-end.
 
 ## Requirements
 
