@@ -1,6 +1,10 @@
-# GitHub Pull Request Automation Learning Lab
+<p align="center">
+  <img src="assets/readme-banner.svg" alt="GitHub Pull Request Automation Learning Lab banner" width="1400" />
+</p>
 
-This repository is an educational Bash lab for learning how Git, GitHub CLI, branches, and pull requests fit together. The script makes a small, timestamped change, publishes a branch, opens a pull request, merges it, and returns to `main`. It is intended for a repository you own or are authorized to administer.
+**I'm Wally**
+
+This repository is an educational Bash lab for learning how Git, GitHub CLI, branches, and pull requests fit together. The script makes a small, timestamped change, publishes a branch, opens a pull request, and merges it while you learn how the GitHub workflow works.
 
 ## Requirements
 
@@ -9,7 +13,7 @@ This repository is an educational Bash lab for learning how Git, GitHub CLI, bra
 - An `origin` remote pointing to a GitHub repository where your account can push branches, create pull requests, and merge them
 - The repository's `main` branch must allow the merge method used by the script (merge commits)
 
-The script checks the working tree, GitHub CLI authentication, repository access, and the `origin` remote before making changes. It uses `main` as its base branch. If there is no commit or remote `main` yet, a real run initializes `main` and pushes it first.
+The script checks the working tree, GitHub CLI authentication, repository access, and the `origin` remote before making changes. It uses `main` as its base branch. If there is no commit or remote, it exits before making changes.
 
 ## Safe test
 
@@ -25,7 +29,7 @@ or:
 bash script.sh --dry-run 1
 ```
 
-A dry run checks the local Git repository and `origin`, then prints what a real run would do. It does not require GitHub CLI authentication because it does not contact GitHub or execute any remote operation.
+A dry run checks the local Git repository and `origin`, then prints what a real run would do. It does not require GitHub CLI authentication because it does not contact GitHub or execute any remote actions.
 
 When ready to create exactly one real pull request, run:
 
@@ -43,13 +47,13 @@ Pass a positive count as the argument:
 bash script.sh 5
 ```
 
-When explicitly run without a count, the script defaults to **1024**. Do not use that default casually: it can create and merge a very large number of pull requests. The script never runs automatically; choose a small count, such as `1`, for a real test.
+When explicitly run without a count, the script defaults to **1024**. Do not use that default casually: it can create and merge a very large number of pull requests. The script never runs automatically without an explicit command.
 
-For local defaults, copy `config.example.sh` to `config.sh` and edit its settings. `config.sh` is ignored by Git. Command-line PR count overrides `PR_COUNT` in that file. Supported settings are `PR_COUNT`, `MAIN_BRANCH` (defaults to `main`), and `DRY_RUN` (`true` or `false`). You can also provide these as environment variables.
+For local defaults, copy `config.example.sh` to `config.sh` and edit its settings. `config.sh` is ignored by Git. Command-line PR count overrides `PR_COUNT` in that file. Supported settings are `PR_COUNT`, `BRANCH_PREFIX`, and `COMMIT_MESSAGE`.
 
 ## Pull Shark and achievements
 
-Pull Shark is a GitHub achievement associated with getting pull requests merged. GitHub determines achievement eligibility and may apply requirements or limits that change over time. Running this script does **not** guarantee that you will receive Pull Shark or any other achievement. See [GitHub's profile reference](https://docs.github.com/en/account-and-profile/reference/profile-reference) for current information.
+Pull Shark is a GitHub achievement associated with getting pull requests merged. GitHub determines achievement eligibility and may apply requirements or limits that change over time. Running this script is educational and should be treated as a learning exercise rather than a guarantee of any achievement.
 
 ## Learning materials
 
